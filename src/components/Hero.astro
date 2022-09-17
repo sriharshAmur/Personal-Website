@@ -22,6 +22,7 @@ import { Icon } from "astro-icon";
           src="https://media-exp1.licdn.com/dms/image/C4E03AQGw5uCelQa_TQ/profile-displayphoto-shrink_200_200/0/1613610772660?e=1668643200&v=beta&t=yU596w5yAH8r1FiFcWihp5x_se0zJEJROMmI9UBdNTo"
           alt="Profile Pciture"
           width="100%"
+          class="rounded-[50%]"
         />
       </div>
     </div>
@@ -31,18 +32,28 @@ import { Icon } from "astro-icon";
     >
       <div class="flex items-start">
         <div class="mr-2">
-          <Icon name="ri:linkedin-box-fill" size={30} />
-        </div>
-        <div class="mr-2">
-          <Icon name="ri:github-fill" size={30} />
+          <a href="https://www.linkedin.com/in/sriharsh-amur/" target="_blank">
+            <Icon name="ri:linkedin-box-fill" size={30} />
+          </a>
+        </div><a
+          href="https://www.linkedin.com/in/sriharsh-amur/"
+          target="_blank"
+        >
+        </a><div class="mr-2">
+          <a href="https://www.linkedin.com/in/sriharsh-amur/" target="_blank">
+          </a><a href="https://github.com/sriharshAmur" target="_blank">
+            <Icon name="ri:github-fill" size={30} />
+          </a>
         </div>
       </div>
-      <div class="text-xl flex items-center mt-4 md:mt-0">
-        <div class="mr-1">sriharshamur@gmail.com</div>
-        <div>
-          <Icon name="ri:mail-fill" size={25} />
+      <a href="mailto:sriharshamur@gmail.com" target="_blank">
+        <div class="text-xl flex items-center mt-4 md:mt-0">
+          <div class="mr-1">sriharshamur@gmail.com</div>
+          <div>
+            <Icon name="ri:mail-fill" size={25} />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>

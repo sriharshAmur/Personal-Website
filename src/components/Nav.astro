@@ -6,7 +6,6 @@ import { Icon } from "astro-icon";
   <nav class="pt-2 md:w-10/12 md:mx-auto">
     <div class="flex justify-between items-center px-2 py-2">
       <div class="text-2xl md:text-3xl font-black">
-        <!-- <img src="/assets/logo-dark.svg" alt="A starry night sky." width="30"> -->
         <a href="/">SHA</a>
       </div>
       <div class="flex items-center flex-row-reverse md:flex-row">
@@ -33,12 +32,17 @@ import { Icon } from "astro-icon";
             <div class="mx-2 hover:text-red-400 cursor-pointer">Contact</div>
           </a>
         </div>
-        <div
-          class="border-2 rounded p-2 font-bold text-red-400 flex items-center"
+        <a
+          href="https://drive.google.com/file/d/1-BmTtDarlGo6_lo9gVz16vmmpjC1cyN0/view?usp=sharing"
+          target="_blank"
         >
-          <div>View my CV</div>
-          <Icon name="ic:baseline-arrow-forward-ios" size={15} />
-        </div>
+          <div
+            class="border-2 rounded p-2 font-bold text-red-400 hover:bg-red-400 hover:text-white flex items-center"
+          >
+            <div>View my CV</div>
+            <Icon name="ic:baseline-arrow-forward-ios" size={15} />
+          </div>
+        </a>
       </div>
     </div>
   </nav>
