@@ -7,19 +7,31 @@ import { Icon } from "astro-icon";
     <div class="flex justify-between items-center px-2 py-2">
       <div class="text-2xl md:text-3xl font-black">
         <!-- <img src="/assets/logo-dark.svg" alt="A starry night sky." width="30"> -->
-        SHA
+        <a href="/">SHA</a>
       </div>
       <div class="flex items-center flex-row-reverse md:flex-row">
         <div class="ml-2 md:hidden">
           <Icon name="ic:outline-menu" size={20} />
         </div>
         <div class="hidden md:flex mr-4">
-          <div class="mx-2 hover:text-red-400 cursor-pointer">Home</div>
-          <div class="mx-2 hover:text-red-400 cursor-pointer">About</div>
-          <div class="mx-2 hover:text-red-400 cursor-pointer">Projects</div>
-          <div class="mx-2 hover:text-red-400 cursor-pointer">Skills</div>
-          <div class="mx-2 hover:text-red-400 cursor-pointer">Experience</div>
-          <div class="mx-2 hover:text-red-400 cursor-pointer">Contact</div>
+          <a href="#hero">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">Home</div>
+          </a>
+          <a href="#about">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">About</div>
+          </a>
+          <a href="#projects">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">Projects</div>
+          </a>
+          <a href="#skills">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">Skills</div>
+          </a>
+          <a href="#experience">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">Experience</div>
+          </a>
+          <a href="#contact">
+            <div class="mx-2 hover:text-red-400 cursor-pointer">Contact</div>
+          </a>
         </div>
         <div
           class="border-2 rounded p-2 font-bold text-red-400 flex items-center"
