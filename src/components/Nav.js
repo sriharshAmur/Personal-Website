@@ -24,7 +24,3 @@ links.forEach((link) => {
     document.getElementById(section).scrollIntoView();
   });
 });
-
-const openLink = (link) => {
-  console.log(link);
-};
