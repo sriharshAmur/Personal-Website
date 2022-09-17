@@ -4,6 +4,8 @@ import MainHead from "../components/MainHead.astro";
 import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Experience from "../components/Experience.astro";
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob("./project/**/*.md");
@@ -25,5 +27,7 @@ const featuredProject = projects[0];
 
     <Hero />
     <About />
+    <Skills />
+    <Experience />
   </body>
 </html>
