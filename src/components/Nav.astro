@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon";
 ---
 
+<script src="./Nav.js"></script>
 <div class="w-full sticky top-0 bg-white z-10">
   <nav class="pt-2 md:w-10/12 md:mx-auto">
     <div class="flex justify-between items-center px-2 py-2">
@@ -9,7 +10,7 @@ import { Icon } from "astro-icon";
         <a href="/">SHA</a>
       </div>
       <div class="flex items-center flex-row-reverse md:flex-row">
-        <div class="ml-2 md:hidden">
+        <div class="ml-2 md:hidden" id="menu">
           <Icon name="ic:outline-menu" size={20} />
         </div>
         <div class="hidden md:flex mr-4">
@@ -46,4 +47,68 @@ import { Icon } from "astro-icon";
       </div>
     </div>
   </nav>
+</div>
+
+<div
+  id="mobile-nav"
+  class="pt-3 fixed top-0 left-0 w-screen h-screen bg-black z-20 hidden"
+>
+  <div class="flex justify-between items-center px-2 py-2 text-white">
+    <div class="text-2xl md:text-3xl font-black">
+      <a href="/">SHA</a>
+    </div>
+    <div id="close" class="ml-2 md:hidden text-white" id="menu">
+      <Icon name="clarity:close-line" size={30} />
+    </div>
+  </div>
+
+  <div class="text-white flex flex-col items-center mt-4">
+    <div
+      data-url="hero"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      Home
+    </div>
+    <div
+      data-url="about"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      About
+    </div>
+    <div
+      data-url="projects"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      Projects
+    </div>
+    <div
+      data-url="skills"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      Skills
+    </div>
+    <div
+      data-url="experience"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      Experience
+    </div>
+    <div
+      data-url="contact"
+      class="links mx-2 hover:text-red-400 cursor-pointer my-4 text-2xl"
+    >
+      Contact
+    </div>
+  </div>
+  <a
+    href="https://drive.google.com/file/d/1-BmTtDarlGo6_lo9gVz16vmmpjC1cyN0/view?usp=sharing"
+    target="_blank"
+  >
+    <div
+      class="w-fit text-center mx-auto mt-6 text-xl px-4 border-2 rounded py-2 font-bold text-red-400 hover:bg-red-400 hover:text-white flex items-center"
+    >
+      <div>View my CV</div>
+      <Icon name="ic:baseline-arrow-forward-ios" size={15} />
+    </div>
+  </a>
 </div>
