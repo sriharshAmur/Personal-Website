@@ -12,7 +12,7 @@ export default function ContactForm() {
     message: "",
   });
 
-  console.log("meta", import.meta.env.PUBLIC_FORMBOLD_URL);
+  console.log("meta", import.meta.env);
   console.log("process", process.env);
 
   const onSubmit = (e) => {
