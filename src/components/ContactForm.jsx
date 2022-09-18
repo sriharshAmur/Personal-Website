@@ -13,8 +13,9 @@ export default function ContactForm() {
   });
   const url = import.meta.env.PUBLIC_FORMBOLD_URL;
   console.log("mode", import.meta.env.MODE);
-  console.log("env: ", import.meta.env);
+  console.log("env:", import.meta.env);
   console.log("url", url);
+  console.log("process.env", process.env);
 
   const onSubmit = (e) => {
     e.preventDefault();
