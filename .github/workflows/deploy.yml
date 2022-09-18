@@ -18,6 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checking access to secrets
+        run: echo 'Secrets ${{  secrets.PUBLIC_FORMBOLD_URL }}'
       - name: Checkout your repository using git
         uses: actions/checkout@v2          
       - name: Install, build, and upload your site
