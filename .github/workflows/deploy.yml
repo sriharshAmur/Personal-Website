@@ -22,6 +22,8 @@ jobs:
         uses: actions/checkout@v2          
       - name: Install, build, and upload your site
         uses: withastro/action@v0
+      - run: echo 'Env ${{ env.PUBLIC_FORMBOLD_URL }}' 
+      - run: echo 'Secret ${{ secrets.PUBLIC_FORMBOLD_URL }}'
         env:
           PUBLIC_FORMBOLD_URL: ${{ secrets.PUBLIC_FORMBOLD_URL }}
 
@@ -35,3 +37,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        env:
+          PUBLIC_FORMBOLD_URL: ${{ secrets.PUBLIC_FORMBOLD_URL }}
