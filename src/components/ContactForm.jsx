@@ -11,11 +11,6 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
-  const url = import.meta.env.PUBLIC_FORMBOLD_URL;
-  console.log("mode", import.meta.env.MODE);
-  console.log("env:", import.meta.env);
-  console.log("url", url);
-  console.log("process.env", process.env);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +34,8 @@ export default function ContactForm() {
       email,
       message,
     };
-    const url = import.meta.env.PUBLIC_FORMBOLD_URL;
+
+    const url = "https://formbold.com/s/60Jj3";
     axios({
       method: "POST",
       url: url,

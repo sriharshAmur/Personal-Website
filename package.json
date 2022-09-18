@@ -1,8 +1,13 @@
 {
-  "name": "@example/portfolio",
+  "name": "sri-harsh-amur-website",
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Sri Harsh Amur",
+    "email": "sriharshamur@gmail.com"
+  },
+  "description": "My personal website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
